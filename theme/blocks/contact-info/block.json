@@ -1,0 +1,14 @@
+{
+	"apiVersion": 3,
+	"name": "acf/contact-info",
+	"title": "Contact Info",
+	"description": "Custom block.",
+	"keywords": ["contact","info"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "contact-info.php"
+	},
+	"supports": {
+		"anchor": true
+	}
+}

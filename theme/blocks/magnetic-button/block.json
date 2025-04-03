@@ -1,0 +1,19 @@
+{
+	"$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+	"apiVersion": 3,
+	"name": "acf/magnetic-button",
+	"title": "Magnetic Button",
+	"description": "Custom block.",
+	"keywords": ["magnetic","button"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "magnetic-button.php"
+	},
+	"supports": {
+		"anchor": true
+	},
+	"styles": [
+		{ "name": "magentic-dark", "label": "Dark", "isDefault": true },
+		{ "name": "magnetic-light", "label": "Light" }
+	]
+}

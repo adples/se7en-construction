@@ -1,0 +1,16 @@
+{
+	"apiVersion": 3,
+	"name": "acf/image-panel",
+	"title": "Image Panel",
+	"description": "Custom content block.",
+	"category": "custom-theme",
+	"keywords": ["image","panel"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "image-panel.php"
+	},
+	"supports": {
+		"anchor": true,
+		"jsx": true
+	}
+}

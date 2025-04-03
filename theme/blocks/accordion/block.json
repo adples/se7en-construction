@@ -1,0 +1,19 @@
+{
+	"apiVersion": 3,
+	"name": "acf/accordion",
+	"title": "Accordion",
+	"description": "Custom block.",
+	"keywords": ["accordion","panel"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "accordion.php"
+	},
+	"supports": {
+		"anchor": true,
+		"jsx": false,
+		"color": {
+			"background": false,
+			"text": true
+		}
+	}
+}

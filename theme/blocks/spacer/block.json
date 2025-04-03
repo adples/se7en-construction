@@ -1,0 +1,14 @@
+{
+	"apiVersion": 3,
+	"name": "acf/spacer",
+	"title": "Responsive Spacer",
+	"description": "Custom block.",
+	"keywords": ["spacer","responsive","hr"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "spacer.php"
+	},
+	"supports": {
+		"anchor": true
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"apiVersion": 3,
+	"name": "acf/wrapper",
+	"title": "Wrapper",
+	"description": "Custom block.",
+	"keywords": ["wrapper","container"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "wrapper.php"
+	},
+	"supports": {
+		"anchor": true,
+		"spacing": {
+		  "margin": false,
+		  "padding": [ "top", "bottom" ]
+		},
+		"jsx": true,
+		"color": {
+			"background": true,
+			"text": false
+		},
+		"align": true
+	},
+	"styles": [
+		{ "name": "default", "label": "Default", "isDefault": true },
+		{ "name": "gradient-overlay", "label": "Gradient Overlay" }
+	]
+}

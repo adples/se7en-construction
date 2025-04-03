@@ -1,0 +1,58 @@
+/**
+ * Custom `@font-face` rules
+ *
+ * These will be added immediately before Tailwind’s `base` layer.
+ */
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 100 900;
+	font-display: swap;
+	font-style: normal;
+	font-named-instance: "Regular";
+	src: url("fonts/inter/InterVariable.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 100 900;
+	font-display: swap;
+	font-style: italic;
+	font-named-instance: "Italic";
+	src: url("fonts/inter/InterVariable-Italic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Silver";
+	font-display: swap;
+	font-style: normal;
+	font-named-instance: "Regular";
+	src: url("fonts/Silver/thesilvereditorial-regular-webfont.woff2")
+		format("woff2");
+}
+
+@font-face {
+	font-family: "Silver";
+	font-display: swap;
+	font-style: normal;
+	font-named-instance: "Italic";
+	src: url("fonts/Silver/thesilvereditorial-italic-webfont.woff2")
+		format("woff2");
+}
+
+@font-face {
+	font-family: "BodoniModa";
+	src:
+		url("fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf")
+			format("truetype supports variations"),
+		url("fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf")
+			format("truetype-variations");
+	font-weight: 100 1000;
+}
+
+/* @font-face {
+	font-family: "Poppins";
+	src: url("fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+} */

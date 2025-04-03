@@ -1,0 +1,18 @@
+{
+	"apiVersion": 3,
+	"name": "acf/badge",
+	"title": "Badge",
+	"description": "Custom block.",
+	"keywords": ["badge","emblem"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "badge.php"
+	},
+	"supports": {
+		"anchor": true,
+		"color": {
+			"background": false,
+			"text": true
+		}
+	}
+}

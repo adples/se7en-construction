@@ -1,0 +1,14 @@
+{
+	"apiVersion": 3,
+	"name": "acf/accent-icon",
+	"title": "Accent Icon",
+	"description": "Custom block.",
+	"keywords": ["icon","emblem"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "accent-icon.php"
+	},
+	"supports": {
+		"anchor": true
+	}
+}

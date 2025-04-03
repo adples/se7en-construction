@@ -1,0 +1,16 @@
+{
+	"$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+	"apiVersion": 3,
+	"name": "acf/card",
+	"title": "Flexible Card",
+	"description": "Custom block.",
+	"keywords": ["card","flexible","content"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "card.php"
+	},
+	"supports": {
+		"anchor": true,
+		"jsx": true
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"apiVersion": 3,
+	"name": "acf/hero",
+	"title": "Hero",
+	"description": "Custom content block.",
+	"category": "custom-theme",
+	"keywords": ["hero","banner"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "hero.php"
+	},
+	"supports": {
+		"anchor": true,
+		"jsx": true
+	}
+}

@@ -1,0 +1,108 @@
+/**
+ * Additional styles applied only to the WordPress editor
+ *
+ * It is sometimes necessary to add additional styles for the WordPress block
+ * editor, generally to improve the editor experience. For example, you may
+ * want to tweak the appearance of the title area to better match your site’s
+ * front end, or you may need to change the appearance of a block to better
+ * distinguish between its fields while editing.
+ *
+ * Those styles should be added in this file, and they will be added only to
+ * the block editor.
+ */
+
+/**
+ * This allows you to use classes from both the default Tailwind theme and
+ * your custom theme.
+ */
+@reference "./tailwind-theme.css";
+
+.entry-header,
+.entry-content {
+	@apply px-8;
+}
+
+:where(.wp-block-columns) {
+	margin-bottom: 0;
+}
+
+:root :where(p.has-background) {
+	padding: initial;
+	margin: initial;
+}
+
+.wp-block-acf-step {
+	@apply mb-12 last:mb-0;
+}
+
+.wp-block.wp-block-acf-button {
+	display: inline-block;
+}
+
+.wp-block.wp-block-acf-button.is-style-rounded-md {
+	@apply rounded-md;
+}
+.wp-block.wp-block-acf-button.is-style-rounded-full {
+	@apply rounded-full;
+}
+.wp-block.wp-block-acf-button.aligncenter {
+	@apply -translate-x-1/2 left-1/2;
+}
+
+.is-root-container > .wp-block.wp-block-acf-wrapper {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+.wp-block > .wp-block-acf-wrapper {
+	@apply px-6;
+}
+.wp-block > .wp-block-acf-wrapper .wp-block-acf-wrapper {
+	@apply px-0;
+}
+
+.wp-block > .wp-block-acf-wrapper > .container {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+.flex-has-children > div:not(.block-list-appender),
+.grid-has-children > div:not(.block-list-appender) {
+	display: contents;
+}
+
+.split-list ul {
+	margin-top: 0;
+	display: flow-root;
+}
+
+.wp-block-paragraph {
+	margin-top: 0;
+}
+.wp-block-image,
+.wp-block-image img {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.wp-block-image.aligncenter > div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-block-paragraph {
+	margin-bottom: 1rem;
+}
+
+.acf-block-preview.wp-block-acf-spacer {
+	min-height: auto;
+}
+
+.has-heading-1-font-size,
+.has-heading-2-font-size,
+.has-heading-3-font-size,
+.has-heading-4-font-size,
+.has-heading-5-font-size,
+.has-heading-6-font-size {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}

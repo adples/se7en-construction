@@ -1,0 +1,65 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "acf/button",
+	"title": "Button",
+	"description": "custom button block",
+	"style": "file:./button.css",
+	"editorStyle": "file:./editor.css",
+	"keywords": [
+		"",
+		"",
+		""
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "button.php"
+	},
+	"supports": {
+		"mode": false,
+		"align": [
+			"wide",
+			"full",
+			"left",
+			"center",
+			"right"
+		],
+		"alignWide": false,
+		"alignContent": false,
+		"alignText": true,
+		"anchor": true,
+		"className": true,
+		"color": {
+			"background": true,
+			"gradients": false,
+			"link": false,
+			"text": true,
+			"enableContrastChecker": false
+		},
+		"customClassName": true,
+		"defaultStylePicker": true,
+		"html": false,
+		"multiple": true,
+		"reusable": true,
+		"spacing": {
+			"margin": false,
+			"padding": false
+		},
+		"typography": {
+			"fontSize": false,
+			"lineHeight": false
+		}
+	},
+	"attributes": {
+		"variable": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"styles": [
+		{ "name": "default", "label": "Default", "isDefault": true },
+		{ "name": "rounded-sm", "label": "Rounded Sm." },
+		{ "name": "rounded-md", "label": "Rounded Md." },
+		{ "name": "rounded-full", "label": "Rounded Full" }
+	]
+}

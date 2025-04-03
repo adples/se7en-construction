@@ -1,0 +1,21 @@
+{
+	"apiVersion": 3,
+	"name": "acf/grid-row",
+	"title": "Grid Row",
+	"description": "Custom content block.",
+	"keywords": ["grid","row"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "grid-row.php"
+	},
+	"supports": {
+		"anchor": true,
+		"alignContent": true,
+		"align": [
+			"left",
+			"center",
+			"right"
+		],
+		"jsx": true
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"apiVersion": 3,
+	"name": "acf/styled-title",
+	"title": "Styled Title",
+	"description": "Custom block.",
+	"keywords": ["modal","trigger"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "styled-title.php"
+	},
+	"supports": {
+		"anchor": true
+	}
+}

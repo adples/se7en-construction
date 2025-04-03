@@ -1,0 +1,18 @@
+{
+	"apiVersion": 3,
+	"name": "acf/list",
+	"title": "List",
+	"description": "Custom block.",
+	"keywords": ["list","icon"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "list.php"
+	},
+	"supports": {
+		"anchor": true,
+		"color": {
+			"background": false,
+			"text": true
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"apiVersion": 3,
+	"name": "acf/testimonial-slider",
+	"title": "Testimonial Slider",
+	"description": "Custom block.",
+	"keywords": ["testimonial","slider"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "testimonial-slider.php"
+	},
+	"supports": {
+		"anchor": true,
+		"jsx": false
+	}
+}

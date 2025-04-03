@@ -1,0 +1,21 @@
+{
+	"apiVersion": 3,
+	"name": "acf/flex-row",
+	"title": "Flex Row",
+	"description": "Custom content block.",
+	"keywords": ["flex","row"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "flex-row.php"
+	},
+	"supports": {
+		"anchor": true,
+		"alignContent": true,
+		"align": [
+			"left",
+			"center",
+			"right"
+		],
+		"jsx": true
+	}
+}

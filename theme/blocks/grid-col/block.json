@@ -1,0 +1,21 @@
+{
+	"apiVersion": 3,
+	"name": "acf/grid-col",
+	"title": "Grid Column",
+	"description": "Custom content block.",
+	"keywords": ["grid","column"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "grid-col.php"
+	},
+	"supports": {
+		"anchor": true,
+		"alignContent": true,
+		"align": [
+			"left",
+			"center",
+			"right"
+		],
+		"jsx": true
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"apiVersion": 3,
+	"name": "acf/infinite-slider",
+	"title": "Infinite Slider",
+	"description": "Custom block.",
+	"keywords": ["infinite","slider"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "infinite-slider.php"
+	},
+	"supports": {
+		"anchor": true,
+		"jsx": false
+	}
+}

@@ -1,0 +1,135 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"color": {
+			"defaultPalette": false,
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#ffffff",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#151515",
+					"name": "Foreground"
+				},
+				{
+					"slug": "primary",
+					"color": "#C29671",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#707070",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#F8F8F8",
+					"name": "Tertiary"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "100%",
+			"wideSize": "100%"
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fluid": true,
+			"defaultFontSizes": false,
+			"fontSizes": [
+				{
+					"slug": "reduce",
+					"size": ".875rem",
+					"name": "Reduce",
+					"fluid": false
+				},
+				{
+					"slug": "slight-reduce",
+					"size": ".925rem",
+					"name": "Slight Reduce",
+					"fluid": false
+				},
+				{
+					"slug": "heading-1",
+					"size": "3.75rem",
+					"name": "Heading 1",
+					"fluid": false
+				},
+				{
+					"slug": "heading-2",
+					"size": "3rem",
+					"name": "Heading 2",
+					"fluid": false
+				},
+				{
+					"slug": "heading-3",
+					"size": "2.25rem",
+					"name": "Heading 3",
+					"fluid": false
+				},
+				{
+					"slug": "heading-4",
+					"size": "1.875rem",
+					"name": "Heading 4",
+					"fluid": false
+				},
+				{
+					"slug": "heading-5",
+					"name": "Heading 5",
+					"size": "1.5rem",
+					"fluid": false
+				},
+				{
+					"slug": "heading-6",
+					"name": "Heading 6",
+					"size": "1.25rem",
+					"fluid": false
+				}
+			],
+			"fontFamilies": [
+				{
+					"fontFamily": "'Inter', sans-serif",
+					"slug": "inter",
+					"name": "Inter"
+				},
+				{
+					"fontFamily": "'Silver', serif",
+					"slug": "silver-edition",
+					"name": "Silver Edition",
+					"fontFace": [
+						{
+							"fontFamily": "'Silver', serif",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"fontWeight": "normal",
+							"src": [ "file:./fonts/Silver/thesilvereditorial-regular-webfont.woff2" ]
+						},
+						{
+							"fontFamily": "'Silver', serif",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"fontWeight": "normal",
+							"src": [ "file:./fonts/Silver/thesilvereditorial-italic-webfont.woff2" ]
+						}
+					]
+				}
+			]
+		},
+		"border": {
+			"color": true,
+			"radius": true
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "'Inter', sans-serif"
+		}
+	}
+}

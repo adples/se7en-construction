@@ -1,0 +1,14 @@
+{
+	"apiVersion": 3,
+	"name": "acf/map",
+	"title": "Map",
+	"description": "Custom block.",
+	"keywords": ["map","google","embed"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "map.php"
+	},
+	"supports": {
+		"anchor": true
+	}
+}
