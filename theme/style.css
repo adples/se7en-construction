@@ -2145,8 +2145,8 @@ p.has-reduce-font-size {
 .text-\[4rem\] {
   font-size: 4rem;
 }
-.text-\[8rem\] {
-  font-size: 8rem;
+.text-\[6rem\] {
+  font-size: 6rem;
 }
 .leading-5 {
   --tw-leading: calc(var(--spacing) * 5);
@@ -3691,6 +3691,11 @@ p.has-reduce-font-size {
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
 }
+@media (width >= 64rem) {
+  .lg\:text-\[8rem\] {
+    font-size: 8rem;
+  }
+}
 @media (width >= 80rem) {
   .xl\:top-2 {
     top: calc(var(--spacing) * 2);
@@ -4162,6 +4167,41 @@ p.has-reduce-font-size {
 @media (width >= 80rem) {
   .xl\:pt-40 {
     padding-top: calc(var(--spacing) * 40);
+  }
+}
+@media (width >= 80rem) {
+  .xl\:pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+}
+@media (width >= 80rem) {
+  .xl\:pb-15 {
+    padding-bottom: calc(var(--spacing) * 15);
+  }
+}
+@media (width >= 80rem) {
+  .xl\:pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
+}
+@media (width >= 80rem) {
+  .xl\:pb-25 {
+    padding-bottom: calc(var(--spacing) * 25);
+  }
+}
+@media (width >= 80rem) {
+  .xl\:pb-30 {
+    padding-bottom: calc(var(--spacing) * 30);
+  }
+}
+@media (width >= 80rem) {
+  .xl\:pb-35 {
+    padding-bottom: calc(var(--spacing) * 35);
+  }
+}
+@media (width >= 80rem) {
+  .xl\:pb-40 {
+    padding-bottom: calc(var(--spacing) * 40);
   }
 }
 @media (width >= 80rem) {

@@ -15,6 +15,7 @@
  * pt-10 pt-15 pt-20 pt-25 pt-30 pt-35 pt-40
  * xl:pt-10 xl:pt-15 xl:pt-20 xl:pt-25 xl:pt-30 xl:pt-35 xl:pt-40
  * pb-10 pb-15 pb-20 pb-25 pb-30 pb-35 pb-40
+ * xl:pb-10 xl:pb-15 xl:pb-20 xl:pb-25 xl:pb-30 xl:pb-35 xl:pb-40
  * block sm:block md:block lg:block xl:block 2xl:block
  * hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden
  */
@@ -39,7 +40,7 @@ $padding_top = ( empty( $block['style']['spacing']['padding']['top'] ) ) ? '' : 
 if(!empty( $padding_top )) $padding_top = 'pt-'.((int)$padding_top/2 - 10).' xl:pt-'.(int)$padding_top/2;
 
 $padding_bot = ( empty( $block['style']['spacing']['padding']['bottom'] ) ) ? '' : preg_replace('~\D~', '', $block['style']['spacing']['padding']['bottom']);
-if(!empty( $padding_bot )) $padding_bot = 'pb-'.(int)$padding_bot/2;
+if(!empty( $padding_bot )) $padding_bot = 'pb-'.((int)$padding_bot/2 - 10).' xl:pb-'.(int)$padding_bot/2;
 
 // Default wrapper padding **NOTE MAKE CUSTOMIZER SETTING**
 $wrapper_padding = '';

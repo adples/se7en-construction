@@ -9,7 +9,7 @@
 
 ?>
 
-<footer id="sayHi" class="footer pt-25 pb-25 bg-filter relative overflow-hidden filter-71482 is-style-gradient-overlay-rev bg-cover bg-center bg-no-repeat bg-resize">
+<footer id="sayHi" class="footer pt-15 xl:pt-25 pb-15 xl:pb-25 bg-filter relative overflow-hidden filter-71482 is-style-gradient-overlay-rev bg-cover bg-center bg-no-repeat bg-resize">
 
 	<?php if(!is_page( 'contact' )): ?>
 	<div class="relative z-1 mx-auto px-6 container">
@@ -44,7 +44,7 @@
 			<ul class="flex justify-center md:justify-start items-center [&_li]:mx-8 [&_img]:max-w-none">
 				<?php for ($x = 0; $x <= 10; $x++): ?>
 					<li>
-						<span class="font-serif text-[8rem] italic uppercase text-white/33 noselect">Se7en</span>
+						<span class="font-serif text-[6rem] lg:text-[8rem] italic uppercase text-white/33 noselect">Se7en</span>
 					</li>
 				<?php endfor; ?>
 			</ul>
@@ -54,7 +54,7 @@
 			<ul class="flex justify-center md:justify-start items-center [&_li]:mx-8 [&_img]:max-w-none">
 				<?php for ($x = 0; $x <= 10; $x++): ?>
 					<li>
-						<span class="font-serif text-[8rem] italic uppercase text-white noselect">Se7en</span>
+						<span class="font-serif text-[6rem] lg:text-[8rem] italic uppercase text-white noselect">Se7en</span>
 					</li>
 				<?php endfor; ?>
 			</ul>
