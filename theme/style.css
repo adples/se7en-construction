@@ -564,7 +564,7 @@ p.has-reduce-font-size {
   --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   --tw-gradient-to: transparent;
   --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  --tw-gradient-to-position: 75%;
+  --tw-gradient-to-position: 90%;
 }
 .is-style-subtle-shadow {
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
@@ -701,6 +701,9 @@ p.has-reduce-font-size {
   width: 2.1428571429em;
   top: .1428571429em;
   text-align: center;
+}
+.collapse {
+  visibility: collapse;
 }
 .visible {
   visibility: visible;
@@ -2252,11 +2255,6 @@ p.has-reduce-font-size {
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
 }
-.transition-colors {
-  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
-  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-  transition-duration: var(--tw-duration, var(--default-transition-duration));
-}
 .transition-transform {
   transition-property: transform, translate, scale, rotate;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -2369,11 +2367,6 @@ p.has-reduce-font-size {
   border-width: 0px;
 }
 @media (hover: hover) {
-  .hover\:bg-black:hover {
-    background-color: var(--color-black);
-  }
-}
-@media (hover: hover) {
   .hover\:bg-gray-200:hover {
     background-color: var(--color-gray-200);
   }
@@ -2386,11 +2379,6 @@ p.has-reduce-font-size {
 @media (hover: hover) {
   .hover\:text-gray-900:hover {
     color: var(--color-gray-900);
-  }
-}
-@media (hover: hover) {
-  .hover\:text-white:hover {
-    color: var(--color-white);
   }
 }
 .focus\:bg-gray-200:focus {

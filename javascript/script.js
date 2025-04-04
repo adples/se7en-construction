@@ -15,12 +15,6 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
-/* eslint-disable */
-new Glide('.glide', {
-	autoplay: 3000,
-}).mount();
-/* eslint-enable */
-
 const hero = document.querySelector('[data-se7en]');
 
 window.addEventListener('mousemove', (e) => {
@@ -31,3 +25,12 @@ window.addEventListener('mousemove', (e) => {
 	hero.style.setProperty('--x', `${x}%`);
 	hero.style.setProperty('--y', `${y}%`);
 });
+
+const testimonials = document.querySelector('.glide');
+if (testimonials) {
+	/* eslint-disable */
+	new Glide('.glide', {
+		autoplay: 3000,
+	}).mount();
+	/* eslint-enable */
+}

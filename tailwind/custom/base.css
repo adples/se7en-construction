@@ -200,7 +200,7 @@ p.has-reduce-font-size {
 }
 
 .is-style-gradient-overlay-rev::after {
-	@apply bg-linear-to-t from-primary to-transparent to-75%;
+	@apply bg-linear-to-t from-primary to-transparent to-90%;
 }
 
 .is-style-subtle-shadow {

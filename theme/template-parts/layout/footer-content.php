@@ -44,7 +44,7 @@
 			<ul class="flex justify-center md:justify-start items-center [&_li]:mx-8 [&_img]:max-w-none">
 				<?php for ($x = 0; $x <= 10; $x++): ?>
 					<li>
-						<span class="font-serif text-[8rem] text-foreground italic uppercase text-white/33 noselect">Se7en</span>
+						<span class="font-serif text-[8rem] italic uppercase text-white/33 noselect">Se7en</span>
 					</li>
 				<?php endfor; ?>
 			</ul>
@@ -54,7 +54,7 @@
 			<ul class="flex justify-center md:justify-start items-center [&_li]:mx-8 [&_img]:max-w-none">
 				<?php for ($x = 0; $x <= 10; $x++): ?>
 					<li>
-						<span class="font-serif text-[8rem] text-foreground italic uppercase text-white noselect">Se7en</span>
+						<span class="font-serif text-[8rem] italic uppercase text-white noselect">Se7en</span>
 					</li>
 				<?php endfor; ?>
 			</ul>
