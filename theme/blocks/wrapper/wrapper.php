@@ -86,9 +86,9 @@ $classes = implode( ' ', $all_classes );
 
 // Container
 if( get_field('container') ) {
-	$container = 'relative z-1 container content-wrapper px-6 mx-auto';
+	$container = 'relative z-2 container content-wrapper px-6 mx-auto';
 } else{
-	$container = 'relative z-1 content-wrapper';
+	$container = 'relative z-2 content-wrapper';
 }
 
 

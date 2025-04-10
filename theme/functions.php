@@ -148,6 +148,7 @@ function seven_construction_scripts() {
 	if (is_front_page(  )){
 		wp_enqueue_style( 'glide-css', 'https://cdn.jsdelivr.net/npm/glidejs@2.1.0/dist/css/glide.core.min.css', array(), SEVEN_CONSTRUCTION_VERSION );
 		wp_enqueue_script( 'glide-js', 'https://cdn.jsdelivr.net/npm/@glidejs/glide', array(), SEVEN_CONSTRUCTION_VERSION, true );
+		wp_enqueue_script( 'vimeo-api', 'https://player.vimeo.com/api/player.js', array(), true );
 	}
 
 	wp_enqueue_style( 'seven-construction-style', get_stylesheet_uri(), array(), SEVEN_CONSTRUCTION_VERSION );

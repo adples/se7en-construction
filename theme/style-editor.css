@@ -387,6 +387,38 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   .hero-home h1, .hero-home h2, .hero-home h3, .hero-home h4, .hero-home h5, .hero-home h6 {
     text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.75);
   }
+  .video-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    container-type: size;
+    overflow: hidden;
+  }
+  .video-wrapper > iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+  @container (min-aspect-ratio: 16/9) {
+    .video-wrapper > iframe {
+      height: 56.25cqw;
+    }
+  }
+  @container (max-aspect-ratio: 16/9) {
+    .video-wrapper > iframe {
+      width: 177.78cqh;
+    }
+  }
+  .video-wrapper > iframe {
+    pointer-events: none;
+  }
   .is-style-gradient-overlay {
     position: relative;
   }
@@ -398,6 +430,7 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
     height: 100%;
     background-color: rgba(255, 255, 255, 0);
     content: "";
+    z-index: 1;
   }
   .image-panel::before {
     background-color: rgba(0, 0, 0, 0.33);
@@ -642,6 +675,9 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 }
 .z-1 {
   z-index: 1;
+}
+.z-2 {
+  z-index: 2;
 }
 .z-5 {
   z-index: 5;
@@ -1444,11 +1480,17 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 .h-full {
   height: 100%;
 }
+.h-screen {
+  height: 100vh;
+}
 .max-h-svh {
   max-height: 100svh;
 }
 .min-h-16 {
   min-height: calc(var(--spacing) * 16);
+}
+.min-h-\[800px\] {
+  min-height: 800px;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -2053,6 +2095,9 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 .text-white\/75 {
   color: color-mix(in oklab, var(--color-white) 75%, transparent);
 }
+.capitalize {
+  text-transform: capitalize;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -2097,6 +2142,10 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 }
 .backdrop-blur-xs {
   --tw-backdrop-blur: blur(var(--blur-xs));
+  -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+}
+.backdrop-filter {
   -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
 }
@@ -4326,11 +4375,6 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 @media (width >= 96rem) {
   .\32 xl\:w-11\/12 {
     width: calc(11/12 * 100%);
-  }
-}
-@media (width >= 96rem) {
-  .\32 xl\:w-\[225px\] {
-    width: 225px;
   }
 }
 @media (width >= 96rem) {

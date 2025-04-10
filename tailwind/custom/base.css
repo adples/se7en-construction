@@ -175,6 +175,60 @@ p.has-reduce-font-size {
 	text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.75);
 }
 
+.hero-home iframe {
+	/* height: 56.25vw;
+	left: 50%;
+	min-height: 101%;
+	min-width: 101%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	width: 177.77777778vh;
+	z-index: 0; */
+}
+
+.video-wrapper {
+	position: absolute;
+
+	/* ensure positioning regardless of parent flex settings */
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	width: 100%;
+	height: 100%;
+
+	/* important */
+	container-type: size;
+
+	/* cut off overflowing video */
+	overflow: hidden;
+}
+
+.video-wrapper > iframe {
+	position: absolute;
+	/* keep video centered both vertically and horizontally */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 100%;
+	height: 100%;
+
+	/* force aspect ratio based on parent container */
+	@container (min-aspect-ratio: 16/9) {
+		height: 56.25cqw; /* 100*9/16 */
+	}
+
+	@container (max-aspect-ratio: 16/9) {
+		width: 177.78cqh; /* 100*16/9 */
+	}
+
+	/* prevent interaction */
+	pointer-events: none;
+}
+
 .is-style-gradient-overlay {
 	position: relative;
 }
@@ -189,6 +243,7 @@ p.has-reduce-font-size {
 	height: 100%;
 	background-color: rgba(255, 255, 255, 0);
 	content: "";
+	z-index: 1;
 }
 
 .image-panel::before {

@@ -18,7 +18,7 @@ $anchor = ( empty( $block['anchor'] ) ) ? null : 'id=' . $block['anchor'];
 $additional_classes = $block['className'] ?? '';
 
 // Step default classes
-$hero_default_classes = 'relative bg-gray-400 min-h-screen hero-home';
+$hero_default_classes = 'relative bg-gray-400 min-h-[800px] h-screen hero-home';
 
 // Filter Overlay
 $rand = rand ( 10000 , 99999 );
@@ -28,15 +28,20 @@ if( get_field('filter') ){
 	$filter = '';
 }
 
- // Create array $all_classes and implode
+//Background Video
+$show_video = get_field('show_video') && get_field('video') ? true : false;
+
+// Create array $all_classes and implode
 $all_classes = array(
 	$block_name,
 	$additional_classes,
-	$filter,
 	$hero_default_classes,
 );
 
+if( !$show_video ) array_push($all_classes, $filter);
+
 $classes = implode( ' ', $all_classes );
+
 
 // Background Image
 $bg= '';
@@ -63,13 +68,27 @@ if( get_field('bg') ){
 <!-- / Inline Style for Filter Overlay -->
 
 <div <?php echo esc_attr( $anchor ); ?> <?php echo $attributes ?>>
+
+	<?php if( $show_video ): ?>
+		<div class="video-wrapper <?php echo $filter ?>">
+		<?php
+		$x='https://player.vimeo.com/video/';
+		$y='&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;background=1';
+		$vimeo = get_field('video');
+		$vimeo_url = $x.$vimeo.$y;
+		?>
+
+		<iframe id="vimeo" src="<?php echo esc_url($vimeo_url) ?>" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+	<?php endif ?>
+
 	<div class="grid grid-cols-24 gap-4 relative z-5">
 
 		<div class="hidden md:block md:col-span-3 md:m-auto">
-			<div class="flex [writing-mode:vertical-lr] min-h-screen -rotate-180 px-10 w-10">
+			<div class="flex [writing-mode:vertical-lr] min-h-[800px] h-screen -rotate-180 px-10 w-10">
 				<div class="flex border-l-2 border-white h-full pl-4">
 					<div class="flex-grow flex justify-center">
-						<ul class="flex text-lg leading-5 uppercase text-white font-bold">
+						<ul class="flex 2xl:text-lg leading-5 uppercase text-white font-bold">
 							<?php if( get_field('email','option') ): ?>
 								<li class="border-b-2 border-white pb-2 mb-2 uppercase">
 									<a href="<?php echo 'mailto:'.get_field('email','option') ?>"><?php echo get_field('email','option') ?></a>
@@ -103,7 +122,7 @@ if( get_field('bg') ){
 		<div class="col-span-24 md:col-span-18">
 			<div class="container mx-auto px-6">
 				<div class="flex flex-col min-h-screen">
-					<div class="flex-none text-center mt-10">
+					<div class="flex-none text-center mt-10 mb-6">
 						<?php get_template_part('template-parts/layout/partials/logo', null, array('class' => 'hidden md:inline-block', 'color_mode' => 'light')); ?>
 					</div>
 					<div class="flex flex-grow">
@@ -118,7 +137,7 @@ if( get_field('bg') ){
 
 
 		<div class="hidden md:block md:col-span-3 md:m-auto">
-			<div class="flex [writing-mode:vertical-lr] min-h-screen px-10 w-10">
+			<div class="flex [writing-mode:vertical-lr] min-h-[800px] h-screen px-10 w-10">
 				<div class="flex border-l-2 border-white h-full pl-4">
 					<div class="flex-grow flex justify-center">
 						<?php get_template_part( 'template-parts/layout/hero-nav/nav' ); ?>
@@ -128,4 +147,13 @@ if( get_field('bg') ){
 		</div>
 
 	</div>
+
+	<?php if( $show_video ): ?>
+
+			<?php get_template_part( 'template-parts/components/loader' ); ?>
+
+		<!-- close video wrapper -->
+		</div>
+	<?php endif; ?>
+
 </div>
