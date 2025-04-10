@@ -12,7 +12,7 @@
 <footer id="sayHi" class="footer pt-15 xl:pt-25 pb-15 xl:pb-25 bg-filter relative overflow-hidden filter-71482 is-style-gradient-overlay-rev bg-cover bg-center bg-no-repeat bg-resize">
 
 	<?php if(!is_page( 'contact' )): ?>
-	<div class="relative z-1 mx-auto px-6 container">
+	<div class="relative z-2 mx-auto px-6 container">
 		<div class="px-4 py-8 md:px-8 md:py-12 lg:px-12 lg:py-16 relative bg-white rounded-[1rem] md:rounded-[2rem] lg:rounded-[3rem] !rounded-tl-none shadow-(--subtle-shadow)">
 			<?php get_template_part( 'template-parts/components/badge', null, array('text' => 'Get In Touch') );?>
 
@@ -39,7 +39,7 @@
 	</div>
 	<?php endif; ?>
 	<div class="pt-12">
-		<div class="relative overflow-hidden z-1 spotlight">
+		<div class="relative overflow-hidden z-2 spotlight">
 		<div>
 			<ul class="flex justify-center md:justify-start items-center [&_li]:mx-8 [&_img]:max-w-none">
 				<?php for ($x = 0; $x <= 10; $x++): ?>
@@ -65,7 +65,7 @@
 		</div>
 	</div>
 
-	<div class="mx-auto px-6 container relative z-1">
+	<div class="mx-auto px-6 container relative z-2">
 		<div class="flex flex-row justify-center mt-6">
 			<div class="w-full basis-full lg:flex lg:basis-6/12">
 				<div class="w-full py-6 border-y border-y-white/25 text-center">
