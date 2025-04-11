@@ -111,6 +111,10 @@ p.has-reduce-font-size {
 	@apply text-lg lg:text-xl xl:text-2xl;
 }
 
+.has-heading-hero-font-size {
+	@apply text-4xl/12 md:text-5xl/14 lg:text-6xl/18 xl:text-7xl/22;
+}
+
 .is-style-rounded-tl img {
 	@apply rounded-tl-[1rem] md:rounded-tl-[2rem] lg:rounded-tl-[3rem];
 }

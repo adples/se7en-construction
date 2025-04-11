@@ -91,6 +91,12 @@
 					"name": "Heading 6",
 					"size": "1.25rem",
 					"fluid": false
+				},
+				{
+					"slug": "heading-hero",
+					"name": "Hero Heading",
+					"size": "3.7rem",
+					"fluid": false
 				}
 			],
 			"fontFamilies": [
