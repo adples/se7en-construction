@@ -17,7 +17,7 @@
 			<?php get_template_part( 'template-parts/components/badge', null, array('text' => 'Get In Touch') );?>
 
 			<?php if( get_field('footer_title','option') ): ?>
-				<h6 class="mt-12 font-serif font-semibold italic h2"><?php echo get_field('footer_title','option') ?></h6>
+				<h6 class="mt-12 font-serif italic h2"><?php echo get_field('footer_title','option') ?></h6>
 			<?php endif; ?>
 
 			<?php if( get_field('footer_lead','option') ): ?>
