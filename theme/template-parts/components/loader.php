@@ -129,6 +129,16 @@
   }
 }
 
+<?php
+if ( function_exists('get_current_screen')) {
+	$screen = get_current_screen();
+	if ( $screen->is_block_editor === true ){ ?>
+		.loader-overlay{
+			display: none;
+		}
+	<?php }
+}
+?>
 </style>
 
 <div class="loader-overlay">
