@@ -12,11 +12,11 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  *
  * _tw safelist classes (iconify MDI)
- * my-2 my-4 my-6 my-8 my-10 my-12 my-14 my-16 my-18 my-20 my-22 my-24
- * md:my-2 md:my-4 md:my-6 md:my-8 md:my-10 md:my-12 md:my-14 md:my-16 md:my-18 md:my-20 md:my-22 md:my-24
- * lg:my-2 lg:my-4 lg:my-6 lg:my-8 lg:my-10 lg:my-12 lg:my-14 lg:my-16 lg:my-18 lg:my-20 lg:my-22 lg:my-24
- * xl:my-2 xl:my-4 xl:my-6 xl:my-8 xl:my-10 xl:my-12 lx:my-14 xl:my-16 xl:my-18 xl:my-20 xl:my-22 xl:my-24
- * 2xl:my-2 2xl:my-4 2xl:my-6 2xl:my-8 2xl:my-10 2xl:my-12 2lx:my-14 2xl:my-16 2xl:my-18 2xl:my-20 2xl:my-22 2xl:my-24
+ * my-0 my-2 my-4 my-6 my-8 my-10 my-12 my-14 my-16 my-18 my-20 my-22 my-24
+ * md:my-0 md:my-2 md:my-4 md:my-6 md:my-8 md:my-10 md:my-12 md:my-14 md:my-16 md:my-18 md:my-20 md:my-22 md:my-24
+ * lg:my-0 lg:my-2 lg:my-4 lg:my-6 lg:my-8 lg:my-10 lg:my-12 lg:my-14 lg:my-16 lg:my-18 lg:my-20 lg:my-22 lg:my-24
+ * xl:my-0 xl:my-2 xl:my-4 xl:my-6 xl:my-8 xl:my-10 xl:my-12 lx:my-14 xl:my-16 xl:my-18 xl:my-20 xl:my-22 xl:my-24
+ * 2xl:my-0 2xl:my-2 2xl:my-4 2xl:my-6 2xl:my-8 2xl:my-10 2xl:my-12 2lx:my-14 2xl:my-16 2xl:my-18 2xl:my-20 2xl:my-22 2xl:my-24
  */
 
 

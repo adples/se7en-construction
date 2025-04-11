@@ -79,6 +79,9 @@
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+.loader-overly {
+  display: none;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;

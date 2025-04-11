@@ -92,6 +92,7 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   --color-tertiary: var(--wp--preset--color--tertiary);
   --container-content: var(--wp--style--global--content-size);
   --container-wide: var(--wp--style--global--wide-size);
+  --wp--preset--font-family--silver-edition: "Silver", "serif";
   --subtle-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.05);
   --animate-infinite-scroll: infinite-scroll 100s linear infinite;
 }
@@ -875,6 +876,9 @@ p.has-reduce-font-size {
 }
 .mx-auto {
   margin-inline: auto;
+}
+.my-0 {
+  margin-block: calc(var(--spacing) * 0);
 }
 .my-2 {
   margin-block: calc(var(--spacing) * 2);
@@ -2882,6 +2886,11 @@ p.has-reduce-font-size {
   }
 }
 @media (width >= 48rem) {
+  .md\:my-0 {
+    margin-block: calc(var(--spacing) * 0);
+  }
+}
+@media (width >= 48rem) {
   .md\:my-2 {
     margin-block: calc(var(--spacing) * 2);
   }
@@ -2986,6 +2995,11 @@ p.has-reduce-font-size {
   .md\:size-32 {
     width: calc(var(--spacing) * 32);
     height: calc(var(--spacing) * 32);
+  }
+}
+@media (width >= 48rem) {
+  .md\:min-h-\[800px\] {
+    min-height: 800px;
   }
 }
 @media (width >= 48rem) {
@@ -3347,6 +3361,11 @@ p.has-reduce-font-size {
 @media (width >= 64rem) {
   .lg\:col-span-12 {
     grid-column: span 12 / span 12;
+  }
+}
+@media (width >= 64rem) {
+  .lg\:my-0 {
+    margin-block: calc(var(--spacing) * 0);
   }
 }
 @media (width >= 64rem) {
@@ -3853,6 +3872,11 @@ p.has-reduce-font-size {
 @media (width >= 80rem) {
   .xl\:col-span-12 {
     grid-column: span 12 / span 12;
+  }
+}
+@media (width >= 80rem) {
+  .xl\:my-0 {
+    margin-block: calc(var(--spacing) * 0);
   }
 }
 @media (width >= 80rem) {
@@ -4377,6 +4401,11 @@ p.has-reduce-font-size {
 @media (width >= 96rem) {
   .\32 xl\:col-span-12 {
     grid-column: span 12 / span 12;
+  }
+}
+@media (width >= 96rem) {
+  .\32 xl\:my-0 {
+    margin-block: calc(var(--spacing) * 0);
   }
 }
 @media (width >= 96rem) {
