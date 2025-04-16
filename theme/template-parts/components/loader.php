@@ -54,7 +54,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		background-image: url('http://se7enconstruction.test/wp-content/uploads/2025/04/loader-alt.jpg');
+		background-image: url('wp-content/uploads/2025/04/loader-alt.jpg');
 		background-size: cover;
 		background-position:center;
 		z-index: 5;
