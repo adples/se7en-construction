@@ -3230,11 +3230,6 @@ p.has-reduce-font-size {
   }
 }
 @media (width >= 48rem) {
-  .md\:p-24 {
-    padding: calc(var(--spacing) * 24);
-  }
-}
-@media (width >= 48rem) {
   .md\:px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -3250,8 +3245,18 @@ p.has-reduce-font-size {
   }
 }
 @media (width >= 48rem) {
+  .md\:px-24 {
+    padding-inline: calc(var(--spacing) * 24);
+  }
+}
+@media (width >= 48rem) {
   .md\:py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+}
+@media (width >= 48rem) {
+  .md\:py-24 {
+    padding-block: calc(var(--spacing) * 24);
   }
 }
 @media (width >= 48rem) {

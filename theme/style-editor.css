@@ -3085,11 +3085,6 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   }
 }
 @media (width >= 48rem) {
-  .md\:p-24 {
-    padding: calc(var(--spacing) * 24);
-  }
-}
-@media (width >= 48rem) {
   .md\:px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -3105,8 +3100,18 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   }
 }
 @media (width >= 48rem) {
+  .md\:px-24 {
+    padding-inline: calc(var(--spacing) * 24);
+  }
+}
+@media (width >= 48rem) {
   .md\:py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+}
+@media (width >= 48rem) {
+  .md\:py-24 {
+    padding-block: calc(var(--spacing) * 24);
   }
 }
 @media (width >= 48rem) {
