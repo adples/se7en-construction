@@ -18,7 +18,7 @@
  $additional_classes = $block['className'] ?? '';
 
  // Image panel default classes
- $image_panel_default_classes = 'image-panel bg-filter relative overflow-hidden p-12 rounded-[3rem] md:rounded-[4rem] lg:rounded-[4.5rem] 2xl:rounded-[5rem] md:px-24 md:py-24 lg:p-30 xl:p-36 2xl:p-46';
+ $image_panel_default_classes = 'image-panel bg-filter relative overflow-hidden p-12 rounded-[3rem] md:rounded-[4rem] lg:rounded-[4.5rem] 2xl:rounded-[5rem] md:px-18 md:py-24 lg:p-30 xl:p-36 2xl:p-46';
 
  //
  $show_link = false;

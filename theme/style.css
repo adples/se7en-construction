@@ -3245,8 +3245,8 @@ p.has-reduce-font-size {
   }
 }
 @media (width >= 48rem) {
-  .md\:px-24 {
-    padding-inline: calc(var(--spacing) * 24);
+  .md\:px-18 {
+    padding-inline: calc(var(--spacing) * 18);
   }
 }
 @media (width >= 48rem) {
