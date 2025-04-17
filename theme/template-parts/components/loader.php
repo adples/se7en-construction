@@ -54,7 +54,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		background-image: url('wp-content/uploads/2025/04/loader-alt.jpg');
+		background-image: url('wp-content/uploads/2025/04/hero-loader.jpg');
 		background-size: cover;
 		background-position:center;
 		z-index: 5;
@@ -66,7 +66,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0,0,0, .6);
+			background-color: rgba(0,0,0, .33);
 			content: '';
 			backdrop-filter: blur(10px);
 		}
