@@ -611,6 +611,11 @@ p.has-reduce-font-size {
 .footer {
   background-image: url("/wp-content/uploads/2025/03/marble-1-768x1464.jpg");
 }
+@media (min-width: 768px) {
+  .footer {
+    background-image: url("/wp-content/uploads/2025/03/marble-1-scaled.jpg");
+  }
+}
 .footer::before {
   background-color: rgba(255, 255, 255, 0.65);
 }
