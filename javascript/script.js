@@ -57,3 +57,47 @@ if (video) {
 		}, 100);
 	});
 }
+
+const mediaQuery = window.matchMedia('(min-width: 768px)');
+let swapTarget = document.getElementsByClassName('bg-resize');
+mediaQuery.addEventListener('change', handleMediaQuery);
+
+function handleMediaQuery(e) {
+	if (swapTarget) {
+		if (e.matches) {
+			for (let element of swapTarget) {
+				let x = element.getAttribute('data-img-full');
+				let y = 'url(' + x + ')';
+				element.style.backgroundImage = y;
+			}
+		} else {
+			for (let element of swapTarget) {
+				let x = element.getAttribute('data-img-md');
+				let y = 'url(' + x + ')';
+				element.style.backgroundImage = y;
+			}
+		}
+	}
+}
+
+handleMediaQuery(mediaQuery);
+
+// function myFunction(screen) {
+// 	let swapTarget = document.getElementsByClassName('bg-resize');
+// 	if (screen.matches && swapTarget) {
+// 		for (let element of swapTarget) {
+// 			//console.log(element.getAttribute('data-img-md'));
+// 			let x = element.getAttribute('data-img-full');
+// 			let y = 'url(' + x + ')';
+// 			element.css('background-image', y);
+// 			alert(x);
+// 		}
+// 	} else {
+// 		for (let element of swapTarget) {
+// 			let x = element.getAttribute('data-img-md');
+// 			let y = 'url(' + x + ')';
+// 			element.css('background-image', y);
+// 			alert(x);
+// 		}
+// 	}
+// }

@@ -44,7 +44,7 @@ if( get_field('bg') ){
 	$bg_md = wp_get_attachment_image_src($bg['id'], 'medium_large');
 	$bg_full = wp_get_attachment_image_src($bg['id'], 'full');
 
-	$attributes = 'class="'.$classes.' bg-cover bg-center bg-no-repeat bg-resize" style="background-image: url('.$bg_full[0].')" data-img-md="'.$bg_md[0].'" data-img-full="'.$bg_full[0].'"';
+	$attributes = 'class="'.$classes.' bg-cover bg-center bg-no-repeat bg-resize" style="background-image: url('.$bg_md[0].')" data-img-md="'.$bg_md[0].'" data-img-full="'.$bg_full[0].'"';
 } else {
 	$attributes = 'class="'.$classes.'"';
 }

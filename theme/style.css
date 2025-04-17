@@ -126,11 +126,6 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   font-named-instance: "Italic";
   src: url("fonts/Silver/thesilvereditorial-italic-webfont.woff2")	format("woff2");
 }
-@font-face {
-  font-family: "BodoniModa";
-  src: url("fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf")	format("truetype supports variations"),	url("fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz,wght.ttf")	format("truetype-variations");
-  font-weight: 100 1000;
-}
 *, ::after, ::before, ::backdrop, ::file-selector-button {
   box-sizing: border-box;
   margin: 0;
@@ -319,18 +314,6 @@ body.logged-in.admin-bar .navbar-reveal.affix {
   margin-left: auto;
   margin-right: auto;
 }
-p.has-slight-reduce-font-size {
-  font-size: .925rem;
-}
-@media (width >= 96rem) {
-  p.has-slight-reduce-font-size {
-    font-size: var(--text-base);
-    line-height: var(--tw-leading, var(--text-base--line-height));
-  }
-}
-p.has-reduce-font-size {
-  font-size: .875rem;
-}
 @media (width >= 96rem) {
   .content-card > div > *:not(.wp-block-image), .content-card > .card-icon {
     padding-inline: calc(var(--spacing) * 6);
@@ -454,6 +437,18 @@ p.has-reduce-font-size {
     line-height: calc(var(--spacing) * 22);
   }
 }
+p.has-slight-reduce-font-size {
+  font-size: .925rem;
+}
+@media (width >= 96rem) {
+  p.has-slight-reduce-font-size {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+}
+p.has-reduce-font-size {
+  font-size: .875rem;
+}
 .is-style-rounded-tl img {
   border-top-left-radius: 1rem;
 }
@@ -479,6 +474,9 @@ p.has-reduce-font-size {
   .is-style-rounded-tr img {
     border-top-right-radius: 3rem;
   }
+}
+.is-style-subtle-shadow {
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
 }
 .gform_wrapper.gravity-theme .gform_footer {
   padding-bottom: 0;
@@ -541,15 +539,6 @@ p.has-reduce-font-size {
     padding: calc(var(--spacing) * 12);
   }
 }
-.hidden-scroller {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.image-panel .has-heading-2-font-size {
-  line-height: 1.35;
-}
 .hero-home ul li, .hero-home a span {
   text-shadow: -1px -1px 3px rgba(0, 0, 0, 0.75);
 }
@@ -601,9 +590,6 @@ p.has-reduce-font-size {
   content: "";
   z-index: 1;
 }
-.image-panel::before {
-  background-color: rgba(0, 0, 0, 0.33);
-}
 .is-style-gradient-overlay::after {
   --tw-gradient-position: to bottom in oklab;
   background-image: linear-gradient(var(--tw-gradient-stops));
@@ -622,50 +608,11 @@ p.has-reduce-font-size {
   --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   --tw-gradient-to-position: 90%;
 }
-.is-style-subtle-shadow {
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
-}
-.location-lists ul, .service-lists ul {
-  margin-bottom: 0;
-}
 .footer {
   background-image: url("/wp-content/uploads/2025/03/marble-1-768x1464.jpg");
 }
 .footer::before {
   background-color: rgba(255, 255, 255, 0.65);
-}
-.text-sm p {
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
-}
-.testimonial-text p {
-  font-size: var(--text-lg);
-  line-height: var(--tw-leading, var(--text-lg--line-height));
-  font-style: italic;
-}
-@media (width >= 64rem) {
-  .testimonial-text p {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-}
-@media (width >= 80rem) {
-  .testimonial-text p {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-}
-@media (width >= 80rem) {
-  .testimonial-text p {
-    --tw-leading: calc(var(--spacing) * 10);
-    line-height: calc(var(--spacing) * 10);
-  }
-}
-@media (width >= 96rem) {
-  .testimonial-text p {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
 }
 .spotlight ul {
   transform: translateX(-60%);
@@ -703,6 +650,54 @@ p.has-reduce-font-size {
 }
 .noselect:hover {
   cursor: default;
+}
+.image-panel .has-heading-2-font-size {
+  line-height: 1.35;
+}
+.image-panel::before {
+  background-color: rgba(0, 0, 0, 0.33);
+}
+.location-lists ul, .service-lists ul {
+  margin-bottom: 0;
+}
+.hidden-scroller {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.text-sm p {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+.testimonial-text p {
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  font-style: italic;
+}
+@media (width >= 64rem) {
+  .testimonial-text p {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+}
+@media (width >= 80rem) {
+  .testimonial-text p {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+}
+@media (width >= 80rem) {
+  .testimonial-text p {
+    --tw-leading: calc(var(--spacing) * 10);
+    line-height: calc(var(--spacing) * 10);
+  }
+}
+@media (width >= 96rem) {
+  .testimonial-text p {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
 }
 .page-title, .entry-title {
   margin-inline: auto;
@@ -2262,9 +2257,6 @@ p.has-reduce-font-size {
 }
 .text-white\/75 {
   color: color-mix(in oklab, var(--color-white) 75%, transparent);
-}
-.capitalize {
-  text-transform: capitalize;
 }
 .uppercase {
   text-transform: uppercase;

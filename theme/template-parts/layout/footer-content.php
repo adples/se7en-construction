@@ -71,7 +71,7 @@
 				<div class="w-full py-6 border-y border-y-white/25 text-center">
 					<ul class="md:flex md:justify-center  text-white/75 text-sm">
 						<li class="md:px-3 md:border-e md:border-white/25 last:border-0">&copy; <?php echo date("Y").' '.get_bloginfo().' All Rights Reserved.'; ?></li>
-						<li class="md:px-3 md:border-e md:border-white/25 last:border-0"><a href="#">Privacy Policy</a></li>
+						<li class="md:px-3 md:border-e md:border-white/25 last:border-0"><a href="<?php echo esc_url(get_permalink(3)) ?>">Privacy Policy</a></li>
 					</ul>
 				</div>
 			</div>

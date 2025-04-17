@@ -3,8 +3,7 @@
  */
 
 /**
- * This uses the background and foreground colors declared in the `theme.json`
- * file and is applied both to the front end and in the block editor.
+ * Body Styles
  */
 
 [x-cloak] {
@@ -45,6 +44,10 @@ body.logged-in.admin-bar .navbar-reveal.affix {
 	}
 }
 
+/**
+ * Main Content Styles
+ */
+
 .main-content p,
 .main-content ul,
 .main-content ol {
@@ -59,6 +62,10 @@ body.logged-in.admin-bar .navbar-reveal.affix {
 	color: var(--color-primary);
 }
 
+/**
+ * WP Block Image
+ */
+
 .wp-block-image.aligncenter {
 	width: 100%;
 }
@@ -68,18 +75,18 @@ body.logged-in.admin-bar .navbar-reveal.affix {
 	margin-right: auto;
 }
 
-p.has-slight-reduce-font-size {
-	@apply text-[.925rem] 2xl:text-base;
-}
-
-p.has-reduce-font-size {
-	@apply text-[.875rem];
-}
+/**
+ * Content Card
+ */
 
 .content-card > div > *:not(.wp-block-image),
 .content-card > .card-icon {
 	@apply 2xl:px-6;
 }
+
+/**
+ * Typography - theme.json
+ */
 
 .has-heading-1-font-size,
 .h1 {
@@ -115,6 +122,18 @@ p.has-reduce-font-size {
 	@apply text-4xl/12 md:text-5xl/14 lg:text-6xl/18 xl:text-7xl/22;
 }
 
+p.has-slight-reduce-font-size {
+	@apply text-[.925rem] 2xl:text-base;
+}
+
+p.has-reduce-font-size {
+	@apply text-[.875rem];
+}
+
+/**
+ * registerBlockStyle - block-editor.js
+ */
+
 .is-style-rounded-tl img {
 	@apply rounded-tl-[1rem] md:rounded-tl-[2rem] lg:rounded-tl-[3rem];
 }
@@ -122,6 +141,14 @@ p.has-reduce-font-size {
 .is-style-rounded-tr img {
 	@apply rounded-tr-[1rem] md:rounded-tr-[2rem] lg:rounded-tr-[3rem];
 }
+
+.is-style-subtle-shadow {
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+/**
+ * Gravity Forms
+ */
 
 .gform_wrapper.gravity-theme .gform_footer {
 	padding-bottom: 0;
@@ -154,16 +181,9 @@ p.has-reduce-font-size {
 	@apply p-4 md:p-8 lg:p-12 relative bg-white rounded-[1rem] md:rounded-[2rem] lg:rounded-[3rem] border-2 border-foreground !rounded-br-none;
 }
 
-.hidden-scroller {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
-.image-panel .has-heading-2-font-size {
-	line-height: 1.35;
-}
+/**
+ * Home Page Hero
+ */
 
 .hero-home ul li,
 .hero-home a span {
@@ -179,34 +199,16 @@ p.has-reduce-font-size {
 	text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.75);
 }
 
-.hero-home iframe {
-	/* height: 56.25vw;
-	left: 50%;
-	min-height: 101%;
-	min-width: 101%;
-	transform: translate(-50%, -50%);
-	position: absolute;
-	top: 50%;
-	width: 177.77777778vh;
-	z-index: 0; */
-}
-
 .video-wrapper {
 	position: absolute;
-
-	/* ensure positioning regardless of parent flex settings */
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-
 	width: 100%;
 	height: 100%;
-
 	/* important */
 	container-type: size;
-
-	/* cut off overflowing video */
 	overflow: hidden;
 }
 
@@ -233,6 +235,10 @@ p.has-reduce-font-size {
 	pointer-events: none;
 }
 
+/**
+ * ACF Block styles
+ */
+
 .is-style-gradient-overlay {
 	position: relative;
 }
@@ -250,10 +256,6 @@ p.has-reduce-font-size {
 	z-index: 1;
 }
 
-.image-panel::before {
-	background-color: rgba(0, 0, 0, 0.33);
-}
-
 .is-style-gradient-overlay::after {
 	@apply bg-linear-to-b from-primary to-transparent to-50%;
 }
@@ -262,14 +264,9 @@ p.has-reduce-font-size {
 	@apply bg-linear-to-t from-primary to-transparent to-90%;
 }
 
-.is-style-subtle-shadow {
-	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
-}
-
-.location-lists ul,
-.service-lists ul {
-	margin-bottom: 0;
-}
+/**
+ * Footer
+ */
 
 .footer {
 	background-image: url("/wp-content/uploads/2025/03/marble-1-768x1464.jpg");
@@ -279,13 +276,9 @@ p.has-reduce-font-size {
 	background-color: rgba(255, 255, 255, 0.65);
 }
 
-.text-sm p {
-	@apply text-sm;
-}
-
-.testimonial-text p {
-	@apply text-lg lg:text-xl xl:text-2xl 2xl:text-3xl xl:leading-10 italic;
-}
+/**
+ * Spotlight Effect
+ */
 
 .spotlight ul {
 	transform: translateX(-60%);
@@ -328,4 +321,35 @@ p.has-reduce-font-size {
 
 .noselect:hover {
 	cursor: default;
+}
+
+/**
+ * Additional/Misc.
+ */
+.image-panel .has-heading-2-font-size {
+	line-height: 1.35;
+}
+
+.image-panel::before {
+	background-color: rgba(0, 0, 0, 0.33);
+}
+
+.location-lists ul,
+.service-lists ul {
+	margin-bottom: 0;
+}
+
+.hidden-scroller {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.text-sm p {
+	@apply text-sm;
+}
+
+.testimonial-text p {
+	@apply text-lg lg:text-xl xl:text-2xl 2xl:text-3xl xl:leading-10 italic;
 }
