@@ -9,7 +9,7 @@
 
 ?>
 
-<footer id="sayHi" class="footer pt-15 xl:pt-25 pb-15 xl:pb-25 bg-filter relative overflow-hidden filter-71482 is-style-gradient-overlay-rev bg-cover bg-center bg-no-repeat bg-resize">
+<footer id="sayHi" class="footer pt-15 xl:pt-25 pb-15 xl:pb-25 bg-filter relative overflow-hidden filter-71482 is-style-gradient-overlay-rev bg-cover bg-center bg-no-repeat">
 
 	<?php if(!is_page( 'contact' )): ?>
 	<div class="relative z-2 mx-auto px-6 container">
