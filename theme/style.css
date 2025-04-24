@@ -619,6 +619,28 @@ p.has-reduce-font-size {
 .footer::before {
   background-color: rgba(255, 255, 255, 0.65);
 }
+@media (min-width: 768px) {
+  .privacy-policy,	.page-id-458 {
+    background-image: url("/wp-content/uploads/2025/04/marble-fixed.jpg");
+  }
+}
+.privacy-policy, .page-id-458 {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (width >= 48rem) {
+  .privacy-policy, .page-id-458 {
+    background-attachment: fixed;
+  }
+}
+.privacy-policy, .page-id-458 {
+  background-image: url("/wp-content/uploads/2025/04/marble-fixed.jpg");
+}
+.privacy-policy .footer, .page-id-458 .footer {
+  background-image: none;
+}
 .spotlight ul {
   transform: translateX(-60%);
 }
