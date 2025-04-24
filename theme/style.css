@@ -3555,8 +3555,8 @@ p.has-reduce-font-size {
   }
 }
 @media (width >= 64rem) {
-  .lg\:w-\[175px\] {
-    width: 175px;
+  .lg\:w-\[150px\] {
+    width: 150px;
   }
 }
 @media (width >= 64rem) {
@@ -4044,8 +4044,8 @@ p.has-reduce-font-size {
   }
 }
 @media (width >= 80rem) {
-  .xl\:w-\[200px\] {
-    width: 200px;
+  .xl\:w-\[175px\] {
+    width: 175px;
   }
 }
 @media (width >= 80rem) {

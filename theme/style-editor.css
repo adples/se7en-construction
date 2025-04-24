@@ -3410,8 +3410,8 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   }
 }
 @media (width >= 64rem) {
-  .lg\:w-\[175px\] {
-    width: 175px;
+  .lg\:w-\[150px\] {
+    width: 150px;
   }
 }
 @media (width >= 64rem) {
@@ -3899,8 +3899,8 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   }
 }
 @media (width >= 80rem) {
-  .xl\:w-\[200px\] {
-    width: 200px;
+  .xl\:w-\[175px\] {
+    width: 175px;
   }
 }
 @media (width >= 80rem) {

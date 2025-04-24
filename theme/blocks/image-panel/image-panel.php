@@ -27,6 +27,7 @@
 
  if( get_field('show_link') ) $show_link = true;
  if( get_field('link_text') ) $link_text = get_field('link_text');
+ if( get_field('link') ) $link = get_field('link');
 
  // Create array $all_classes and implode
 $all_classes = array(
@@ -54,14 +55,14 @@ if( get_field('bg') ){
 <div <?php echo esc_attr( $anchor ); ?>  class="image-panel-wrapper">
 	<div <?php echo $attributes ?>>
 		<?php if($show_link): ?>
-			<div class="relative z-1 flex flex-col md:flex-row gap-6">
-				<InnerBlocks class="md:basis-1/2 md:order-1"/>
-				<div class="md:basis-1/2 flex items-center justify-center">
+			<div class="z-1 relative flex md:flex-row flex-col gap-6">
+				<InnerBlocks class="md:order-1 md:basis-1/2"/>
+				<div class="flex justify-center items-center md:basis-1/2">
 					<?php get_template_part( 'template-parts/components/magnetic-button', null, array('link' => $link, 'link_text' => $link_text, 'size' => 'large') ); ?>
 				</div>
 			</div>
 		<?php else: ?>
-			<InnerBlocks class="relative z-1" />
+			<InnerBlocks class="z-1 relative" />
 		<?php endif ?>
 	</div>
 </div>

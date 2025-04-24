@@ -13,8 +13,8 @@ if( $color_mode === 'light' ){
 
 <?php if ( get_theme_mod( 'site_logo' ) ): ?>
   <a href="<?php echo esc_url( home_url( '/' )); ?>" class="text-2xl font-bold text-black <?php echo $add_class.' '.$color_mode ?>">
-	  <img class="w-[125px] lg:w-[175px] xl:w-[200px]" src="<?php echo esc_attr(get_theme_mod( 'site_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+	  <img class="w-[125px] lg:w-[150px] xl:w-[175px]" src="<?php echo esc_attr(get_theme_mod( 'site_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
   </a>
 <?php else : ?>
-  <a class="text-2xl font-bold text-black" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
+  <a class="font-bold text-black text-2xl" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
 <?php endif; ?>
