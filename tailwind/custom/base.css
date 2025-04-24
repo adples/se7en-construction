@@ -15,7 +15,7 @@ html {
 }
 
 body {
-	@apply bg-background text-foreground font-sans;
+	@apply bg-background font-sans text-foreground;
 }
 
 body.logged-in.admin-bar .navbar-reveal.affix {
@@ -159,7 +159,7 @@ p.has-reduce-font-size {
 .gform_wrapper.gravity-theme input[type="tel"],
 .gform_wrapper.gravity-theme textarea,
 .gform_wrapper.gravity-theme select {
-	@apply border rounded-md md:rounded-lg lg:rounded-xl border-secondary resize-none;
+	@apply border border-secondary rounded-md md:rounded-lg lg:rounded-xl resize-none;
 }
 
 .gform_wrapper.gravity-theme.detail-contact-form_wrapper select {
@@ -178,7 +178,7 @@ p.has-reduce-font-size {
 }
 
 .detail-contact-form_wrapper {
-	@apply p-4 md:p-8 lg:p-12 relative bg-white rounded-[1rem] md:rounded-[2rem] lg:rounded-[3rem] border-2 border-foreground !rounded-br-none;
+	@apply relative bg-white p-4 md:p-8 lg:p-12 border-2 border-foreground rounded-[1rem] md:rounded-[2rem] lg:rounded-[3rem] !rounded-br-none;
 }
 
 /**
@@ -257,11 +257,11 @@ p.has-reduce-font-size {
 }
 
 .is-style-gradient-overlay::after {
-	@apply bg-linear-to-b from-primary to-transparent to-50%;
+	@apply bg-linear-to-b from-primary to-50% to-transparent;
 }
 
 .is-style-gradient-overlay-rev::after {
-	@apply bg-linear-to-t from-primary to-transparent to-90%;
+	@apply bg-linear-to-t from-primary to-90% to-transparent;
 }
 
 /**
@@ -269,12 +269,12 @@ p.has-reduce-font-size {
  */
 
 .footer {
-	background-image: url("/wp-content/uploads/2025/03/marble-1-768x1464.jpg");
+	background-image: url("/wp-content/uploads/2025/04/marble-fixed-768x913.jpg");
 }
 
 @media (min-width: 768px) {
 	.footer {
-		background-image: url("/wp-content/uploads/2025/03/marble-1-scaled.jpg");
+		background-image: url("/wp-content/uploads/2025/04/marble-fixed.jpg");
 	}
 }
 
@@ -357,5 +357,5 @@ p.has-reduce-font-size {
 }
 
 .testimonial-text p {
-	@apply text-lg lg:text-xl xl:text-2xl 2xl:text-3xl xl:leading-10 italic;
+	@apply text-lg lg:text-xl xl:text-2xl 2xl:text-3xl italic xl:leading-10;
 }

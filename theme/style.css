@@ -609,11 +609,11 @@ p.has-reduce-font-size {
   --tw-gradient-to-position: 90%;
 }
 .footer {
-  background-image: url("/wp-content/uploads/2025/03/marble-1-768x1464.jpg");
+  background-image: url("/wp-content/uploads/2025/04/marble-fixed-768x913.jpg");
 }
 @media (min-width: 768px) {
   .footer {
-    background-image: url("/wp-content/uploads/2025/03/marble-1-scaled.jpg");
+    background-image: url("/wp-content/uploads/2025/04/marble-fixed.jpg");
   }
 }
 .footer::before {

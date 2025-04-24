@@ -463,11 +463,11 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
     --tw-gradient-to-position: 90%;
   }
   .footer {
-    background-image: url("/wp-content/uploads/2025/03/marble-1-768x1464.jpg");
+    background-image: url("/wp-content/uploads/2025/04/marble-fixed-768x913.jpg");
   }
   @media (min-width: 768px) {
     .footer {
-      background-image: url("/wp-content/uploads/2025/03/marble-1-scaled.jpg");
+      background-image: url("/wp-content/uploads/2025/04/marble-fixed.jpg");
     }
   }
   .footer::before {
