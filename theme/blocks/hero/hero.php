@@ -82,15 +82,15 @@ if( get_field('bg') ){
 
 	<?php endif ?>
 
-	<div class="grid grid-cols-24 gap-4 relative z-5">
+	<div class="z-5 relative gap-4 grid grid-cols-24">
 
 		<div class="hidden md:block md:col-span-3 md:m-auto">
-			<div class="flex [writing-mode:vertical-lr] h-screen md:min-h-[800px] -rotate-180 px-10 w-10">
-				<div class="flex border-l-2 border-white h-full pl-4">
-					<div class="flex-grow flex justify-center">
-						<ul class="flex 2xl:text-lg leading-5 uppercase text-white font-bold">
+			<div class="flex px-10 w-10 h-screen md:min-h-[800px] -rotate-180 [writing-mode:vertical-lr]">
+				<div class="flex pl-4 border-white border-l-2 h-full">
+					<div class="flex flex-grow justify-center">
+						<ul class="flex font-bold text-white 2xl:text-lg uppercase leading-5">
 							<?php if( get_field('email','option') ): ?>
-								<li class="border-b-2 border-white pb-2 mb-2 uppercase">
+								<li class="mb-2 pb-2 border-white border-b-2 uppercase">
 									<a href="<?php echo 'mailto:'.get_field('email','option') ?>"><?php echo get_field('email','option') ?></a>
 								</li>
 							<?php endif ?>
@@ -105,12 +105,12 @@ if( get_field('bg') ){
 						<!-- Social fields/options -->
 						<?php if( get_field('instagram','option') ): ?>
 							<a href="<?php echo get_field('instagram','option') ?>" class="me-2">
-								<span class="icon-[fa6-brands--instagram] rotate-90 text-white size-6"></span>
+								<span class="size-6 text-white rotate-90 icon-[fa6-brands--instagram]"></span>
 							</a>
 						<?php endif ?>
 						<?php if( get_field('facebook','option') ): ?>
 							<a href="<?php echo get_field('facebook','option') ?>">
-								<span class="icon-[fa6-brands--facebook] rotate-90 text-white size-6"></span>
+								<span class="size-6 text-white rotate-90 icon-[fa6-brands--facebook]"></span>
 							</a>
 						<?php endif ?>
 						<!-- / Social fields/options -->
@@ -120,16 +120,16 @@ if( get_field('bg') ){
 		</div>
 
 		<div class="col-span-24 md:col-span-18">
-			<div class="container mx-auto px-6">
+			<div class="mx-auto px-6 container">
 				<div class="flex flex-col min-h-screen">
-					<div class="flex-none text-center mt-10 mb-6">
+					<div class="flex-none mt-10 mb-6 text-center">
 						<?php get_template_part('template-parts/layout/partials/logo', null, array('class' => 'hidden md:inline-block', 'color_mode' => 'light')); ?>
 					</div>
 					<div class="flex flex-grow">
-						<InnerBlocks class="my-auto mx-auto text-center"/>
+						<InnerBlocks class="mx-auto my-auto text-center"/>
 					</div>
-					<div class="flex-none text-center pb-6">
-						<a href="#sayHi"><span class="icon-[mdi-light--chevron-double-down] size-16 md:size-32 text-white"></span></a>
+					<div class="flex-none pb-6 text-center">
+						<a href="#sayHi"><span class="size-16 md:size-32 text-white icon-[mdi-light--chevron-double-down]"></span></a>
 					</div>
 				</div>
 			</div>
@@ -137,9 +137,9 @@ if( get_field('bg') ){
 
 
 		<div class="hidden md:block md:col-span-3 md:m-auto">
-			<div class="flex [writing-mode:vertical-lr] h-screen md:min-h-[800px] px-10 w-10">
-				<div class="flex border-l-2 border-white h-full pl-4">
-					<div class="flex-grow flex justify-center">
+			<div class="flex px-10 w-10 h-screen md:min-h-[800px] [writing-mode:vertical-lr]">
+				<div class="flex pl-4 border-white border-l-2 h-full">
+					<div class="flex flex-grow justify-center">
 						<?php get_template_part( 'template-parts/layout/hero-nav/nav' ); ?>
 					</div>
 				</div>
@@ -150,7 +150,7 @@ if( get_field('bg') ){
 
 	<?php if( $show_video ): ?>
 
-			<?php get_template_part( 'template-parts/components/loader' ); ?>
+			<?php //get_template_part( 'template-parts/components/loader' ); ?>
 
 		<!-- close video wrapper -->
 		</div>
