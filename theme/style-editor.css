@@ -1910,6 +1910,9 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 .bg-cover {
   background-size: cover;
 }
+.bg-local {
+  background-attachment: local;
+}
 .bg-center {
   background-position: center;
 }
@@ -3072,6 +3075,11 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 @media (width >= 48rem) {
   .md\:border-white\/25 {
     border-color: color-mix(in oklab, var(--color-white) 25%, transparent);
+  }
+}
+@media (width >= 48rem) {
+  .md\:bg-fixed {
+    background-attachment: fixed;
   }
 }
 @media (width >= 48rem) {

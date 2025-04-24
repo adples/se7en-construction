@@ -68,7 +68,7 @@ if( get_field('style') === 'border' ){
 	$wrapper_styles = '!rounded-bl-none shadow-(--subtle-shadow)';
 }
 
-$icon = get_field('icon') ? '<span class="wrapper-icon icon-[material-symbols-light--asterisk-rounded] absolute size-20 top-4 right-4 lg:size-26 lg:top-6 lg:right-6 xl:size-36  xl:top-2 2xl:size-48 2xl:top-4 2xl:right-4 text-foreground"></span>' : '';
+$icon = get_field('icon') ? '<span class="top-4 lg:top-6 2xl:top-4 xl:top-2 right-4 lg:right-6 2xl:right-4 absolute icon-[material-symbols-light--asterisk-rounded] size-20 lg:size-26 2xl:size-48 xl:size-36 text-foreground wrapper-icon"></span>' : '';
 
 // Create array $all_classes and implode
 $all_classes = array(
@@ -99,7 +99,7 @@ if( get_field('bg') ){
 	$bg_md = wp_get_attachment_image_src($bg['id'], 'medium_large');
 	$bg_full = wp_get_attachment_image_src($bg['id'], 'full');
 
-	$attributes = 'class="'.$classes.' bg-cover bg-center bg-no-repeat bg-resize" style="background-image: url('.$bg_md[0].')" data-img-md="'.$bg_md[0].'" data-img-full="'.$bg_full[0].'"';
+	$attributes = 'class="'.$classes.' bg-local md:bg-fixed bg-cover bg-center bg-no-repeat bg-resize" style="background-image: url('.$bg_md[0].')" data-img-md="'.$bg_md[0].'" data-img-full="'.$bg_full[0].'"';
 } else {
 	$attributes = 'class="'.$classes.'"';
 }
