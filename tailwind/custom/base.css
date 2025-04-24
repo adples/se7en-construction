@@ -264,6 +264,10 @@ p.has-reduce-font-size {
 	@apply bg-linear-to-t from-primary to-90% to-transparent;
 }
 
+.page-id-458 .footer.is-style-gradient-overlay-rev::after {
+	@apply bg-linear-to-t from-33% from-primary to-90% to-transparent;
+}
+
 /**
  * Footer
  */
