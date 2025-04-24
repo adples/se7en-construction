@@ -84,7 +84,7 @@ if( get_field('bg') ){
 
 	<div class="z-5 relative gap-4 grid grid-cols-24">
 
-		<div class="hidden md:block md:col-span-3 md:m-auto">
+		<div class="hidden md:block hero-left md:col-span-3 md:m-auto">
 			<div class="flex px-10 w-10 h-screen md:min-h-[800px] -rotate-180 [writing-mode:vertical-lr]">
 				<div class="flex pl-4 border-white border-l-2 h-full">
 					<div class="flex flex-grow justify-center">
@@ -119,7 +119,7 @@ if( get_field('bg') ){
 			</div>
 		</div>
 
-		<div class="col-span-24 md:col-span-18">
+		<div class="col-span-24 md:col-span-18 hero-center">
 			<div class="mx-auto px-6 container">
 				<div class="flex flex-col min-h-screen">
 					<div class="flex-none mt-10 mb-6 text-center">
@@ -136,7 +136,7 @@ if( get_field('bg') ){
 		</div>
 
 
-		<div class="hidden md:block md:col-span-3 md:m-auto">
+		<div class="hidden md:block hero-right md:col-span-3 md:m-auto">
 			<div class="flex px-10 w-10 h-screen md:min-h-[800px] [writing-mode:vertical-lr]">
 				<div class="flex pl-4 border-white border-l-2 h-full">
 					<div class="flex flex-grow justify-center">
