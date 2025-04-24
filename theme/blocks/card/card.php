@@ -42,7 +42,7 @@ if( get_field('style') === 'gray' ){
 	$card_styles = 'rounded-tl-[3rem]';
 }
 
-$icon = get_field('show_icon') ? '<div class="card-icon"><span class="icon-[material-symbols-light--asterisk-rounded] size-20"></span></div>' : '';
+$icon = get_field('show_icon') ? '<div class="size-20"><div class="absolute card-icon"><span class="icon-[material-symbols-light--asterisk-rounded] size-20"></span></div></div>' : '';
 
 // Create array $all_classes and implode
 $all_classes = array(
