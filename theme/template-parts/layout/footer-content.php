@@ -17,7 +17,7 @@
 			<?php get_template_part( 'template-parts/components/badge', null, array('text' => 'Get In Touch') );?>
 
 			<?php if( get_field('footer_title','option') ): ?>
-				<h6 class="mt-12 font-serif italic h2"><?php echo get_field('footer_title','option') ?></h6>
+				<h6 class="mt-12 font-serif h2"><?php echo get_field('footer_title','option') ?></h6>
 			<?php endif; ?>
 
 			<?php if( get_field('footer_lead','option') ): ?>
@@ -44,7 +44,7 @@
 			<ul class="flex justify-center md:justify-start items-center [&_li]:mx-8 [&_img]:max-w-none">
 				<?php for ($x = 0; $x <= 10; $x++): ?>
 					<li>
-						<span class="font-serif text-[6rem] text-white/33 lg:text-[8rem] italic uppercase noselect">Se7en</span>
+						<span class="font-serif text-[6rem] text-white/33 lg:text-[8rem] uppercase noselect">Se7en</span>
 					</li>
 				<?php endfor; ?>
 			</ul>
@@ -54,7 +54,7 @@
 			<ul class="flex justify-center md:justify-start items-center [&_li]:mx-8 [&_img]:max-w-none">
 				<?php for ($x = 0; $x <= 10; $x++): ?>
 					<li>
-						<span class="font-serif text-[6rem] text-white lg:text-[8rem] italic uppercase noselect">Se7en</span>
+						<span class="font-serif text-[6rem] text-white lg:text-[8rem] uppercase noselect">Se7en</span>
 					</li>
 				<?php endfor; ?>
 			</ul>

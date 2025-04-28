@@ -2,7 +2,7 @@
 
 <!-- Primary Navigation -->
 <nav aria-label="navigation">
-	<ul id="hero-menu" class="flex 2xl:text-lg font-bold leading-5 text-white uppercase">
+	<ul id="hero-menu" class="flex font-semi-bold text-white 2xl:text-lg uppercase leading-5">
 		<?php get_template_part( 'template-parts/layout/hero-nav/nav-menu', null, array('navigation' => $navigation)); ?>
 	</ul>
 </nav>

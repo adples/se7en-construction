@@ -88,7 +88,7 @@ if( get_field('bg') ){
 			<div class="flex px-10 w-10 h-screen md:min-h-[800px] -rotate-180 [writing-mode:vertical-lr]">
 				<div class="flex pl-4 border-white border-l-2 h-full">
 					<div class="flex flex-grow justify-center">
-						<ul class="flex font-bold text-white 2xl:text-lg uppercase leading-5">
+						<ul class="flex font-semi-bold text-white 2xl:text-lg uppercase leading-5">
 							<?php if( get_field('email','option') ): ?>
 								<li class="mb-2 pb-2 border-white border-b-2 uppercase">
 									<a href="<?php echo 'mailto:'.get_field('email','option') ?>"><?php echo get_field('email','option') ?></a>
