@@ -26,7 +26,7 @@ $block_name = 'wp-block-' . $namespace . '-' . $block_name;
 // Block #id
 $anchor = ( empty( $block['anchor'] ) ) ? null : 'id=' . $block['anchor'];
 
-$slider_default_classes = 'glide';
+$slider_default_classes = 'glide relative px-6 sm:px-8 xl:px-12 2xl:px-16';
 
 // Additional editor classes including $block['style'] defined in block.json
 $additional_classes = $block['className'] ?? '';
@@ -56,12 +56,22 @@ $i = 1;
 						<div class="testimonial-text">
 							<?php echo get_sub_field('testimonial_content'); ?>
 						</div>
-						<span class="text-primary text-lg lg:text-xl uppercase block mt-6"><?php echo get_sub_field('testimonial_signature'); ?></span>
+						<span class="block mt-6 text-primary sm:text-lg lg:text-xl uppercase"><?php echo get_sub_field('testimonial_signature'); ?></span>
 					</div>
 					<?php $i++; ?>
 				<?php endwhile; ?>
 			</div>
 		</div>
+
+		<div class="glide__arrows" data-glide-el="controls">
+			<button class="top-1/2 left-0 absolute -translate-y-1/2 glide__arrow glide__arrow--prev" data-glide-dir="<">
+				<span class="icon-[mdi--chevron-left] size-8 2xl:size-12 xl:size-10"></span>
+			</button>
+			<button class="top-1/2 right-0 absolute -translate-y-1/2 glide__arrow glide__arrow--next" data-glide-dir=">">
+				<span class="icon-[mdi--chevron-right] size-8 2xl:size-12 xl:size-10"></span>
+			</button>
+		</div>
+
 	</div>
 <?php endif ?>
 
