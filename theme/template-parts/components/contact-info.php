@@ -14,24 +14,24 @@ $block_classes = isset($args['classes']) ? $args['classes'] : '';
 		<span class="me-6 size-12 lg:size-16 2xl:size-20 icon-[mdi-light--email-open]"></span>
 		<span>
 			<h6 class="mb-2 font-serif h4">Email</h6>
-			<a class="uppercase" href=""><?php echo get_field('email','option') ?></a>
+			<a class="uppercase" href="mailto:<?php echo get_field('email','option') ?>"><?php echo get_field('email','option') ?></a>
 		</span>
 	</li>
 	<?php endif; ?>
 
 	<?php if( get_field('phone','option') ): ?>
 	<li class="flex items-center">
-		<span class="me-6 size-12 lg:size-16 2xl:size-20 icon-[material-symbols-light--phone-in-talk-outline]"></span>
+		<span class="me-6 icon-[material-symbols-light--phone-in-talk-outline] size-12 lg:size-16 2xl:size-20"></span>
 		<span>
 			<h6 class="mb-2 font-serif h4">Phone</h6>
-			<a class="uppercase" href=""><?php echo get_field('phone','option') ?></a>
+			<a class="uppercase" href="tel:<?php echo get_field('phone','option') ?>"><?php echo get_field('phone','option') ?></a>
 		</span>
 	</li>
 	<?php endif; ?>
 
 	<?php if( get_field('location','option') ): ?>
 	<li class="flex items-center">
-		<span class="me-6 size-12 lg:size-16 2xl:size-20 icon-[material-symbols-light--share-location-rounded]"></span>
+		<span class="me-6 icon-[material-symbols-light--share-location-rounded] size-12 lg:size-16 2xl:size-20"></span>
 		<span>
 			<h6 class="mb-2 font-serif h4">Location</h6>
 			<?php echo get_field('location','option') ?>
